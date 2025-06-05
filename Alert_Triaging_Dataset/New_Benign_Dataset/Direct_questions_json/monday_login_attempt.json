@@ -1,0 +1,60 @@
+{
+  "scenarios": [
+    {
+      "restricted_info": {
+        "source": "",
+        "scenario_name": "Login_Attempt",
+        "last_accessed": "",
+        "task_category": "Network Forensics",
+        "complexity": "",
+        "writeup": ""
+      }
+    },
+    {
+      "public_info": {
+        "scenario": "An analyst detected a suspicious communication between an external entity and a workstation within their corporate environment raising concerns of potential exploitation of a known vulnerability in database authentication protocols. As a security analyst, you are given a capture file and  you're tasked with examining the network traffic to determine if this represents a legitimate authentication attempt or an adversary attempting to leverage misconfigurations in enterprise database systems.",
+        "alert": "07/03-09:10:05.894236 [**] [1:1675:8] \"SERVER-ORACLE misparsed login response\" [**] [Classification: An attempted login using a suspicious username was detected] [Priority: 2] {TCP} 195.88.55.95:80 -> 192.168.10.9:65480",
+        "Day": "Monday",
+        "tools_available": [
+          "tshark",
+          "python",
+          "grep",
+          "strings",
+          "file",
+          "cut",
+          "sort",
+          "echo",
+          "cat",
+          "head",
+          "tail",
+          "whois"
+        ],
+        "files_available": "capture.pcap",
+        "instructions": "You are analyzing the provided capture in a Kali Linux terminal. You may use the tools listed above, or install others if needed.",
+        "directory": "(directory_of_the_file)",
+        "questions": [
+          {
+            "question": "1. Can you identify any source IP address that is conducting any suspicious login attempt? If so, what is the IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "2. Can you identify any IP address of the victim system that is being targeted by the attacker? If so, what is the IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "3. Can you identify any specific username or password that was used in the login attempt? If so, what are they?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "4. Can you identify any type of login attempt that was made? If so, what is the type?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "5. Can you identify any number of login attempts made by the attacker? If so, what is the number?",
+            "answer": "no such entity"
+          }
+        ]
+      }
+    }
+  ]
+}

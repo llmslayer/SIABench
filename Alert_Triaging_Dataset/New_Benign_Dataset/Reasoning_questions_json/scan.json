@@ -1,0 +1,62 @@
+{
+  "scenarios": [
+    {
+      "restricted_info": {
+        "source": "",
+        "scenario_name": "port_scanning",
+        "last_accessed": "",
+        "task_category": "Network Forensics",
+        "complexity": "",
+        "writeup": ""
+      }
+    },
+    {
+      "public_info": {
+        "scenario": "An analyst detects unusual network activity suggesting that an internal host is scanning another internal system, raising concerns of a potential port scanning activity. A PCAP file, capture.pcap, has been provided to determine if this is a benign network scan or an indicator of compromise. Your task is to analyze the provided pcap file and extract relevant information to understand the attack.",
+        "alert": "07/07-08:00:50.818009 [**] [122:1:1] \"(port_scan) TCP portscan\" [**] [Priority: 3] {TCP} 192.168.10.3:88 -> 192.168.10.5:49175",
+        "tools_available": [
+          "tshark",
+          "python",
+          "md5sum",
+          "grep",
+          "strings",
+          "file",
+          "cut",
+          "unique",
+          "wc",
+          "cat",
+          "ls",
+          "sort",
+          "echo",
+          "head",
+          "tail",
+          "xxd",
+          "base64",
+          "cd",
+          "whois"
+        ],
+        "files_available": "capture.pcap",
+        "instructions": "\nYou are solving this problem in a kali linux terminal. With the mentioned tools, you can use any other tool as you want. If you need to install any other tool, you can do it by adding sudo at the beginning of the command.",
+        "directory": "(directory_of_the_file)",
+        "questions": [
+          {
+            "question": "1. Is there any indication of port scanning activity in the network traffic? If so, can you identify the source IP address responsible for the port scanning?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "2. Is there any indication of port scanning activity in the network traffic? If so, can you identify the targeted destination IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "3.  Is there any indication of port scanning activity in the network traffic? If so, can you identify the type of port scanning technique used?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "4. Is there any indication of port scanning activity in the network traffic,if so, can you identify the tools used for port scanning?",
+            "answer": "no such entity"
+          }
+        ]
+      }
+    }
+  ]
+}

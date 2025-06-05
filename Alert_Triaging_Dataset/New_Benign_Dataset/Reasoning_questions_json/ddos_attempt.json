@@ -1,0 +1,52 @@
+{
+  "scenarios": [
+    {
+      "restricted_info": {
+        "source": "",
+        "scenario_name": "DDoS_attempt",
+        "last_accessed": "",
+        "task_category": "Network Forensics",
+        "complexity": "",
+        "writeup": ""
+      }
+    },
+    {
+      "public_info": {
+        "scenario": "The SOC has received an alert indicating a potential denial-of-service activity targeting an external web application. A PCAP file capturing this exchange has been isolated. Your assignment is to examine the network traffic to determine if this a benign event or a malicious attempt to disrupt the web application.",
+        "alert": "07/03-12:48:48.967271 [**] [1:1546:18] \"SERVER-WEBAPP Cisco HTTP double-percent DOS attempt\" [**] [Classification: Web Application Attack] [Priority: 1] {TCP} 192.168.10.9:4200 -> 151.101.208.166:80",
+        "tools_available": [
+          "tshark",
+          "tcpdump",
+          "grep",
+          "curl",
+          "awk",
+          "sed",
+          "cut",
+          "xxd",
+          "python",
+          "cat",
+          "wc",
+          "md5sum"
+        ],
+        "files_available": "capture.pcap",
+        "instructions": "You are solving this problem in a Kali Linux terminal. With the mentioned tools, you can use any other tool as you want. If you need to install any other tool, you can do it by adding sudo at the beginning of the command.",
+        "directory": "(directory_of_the_file)",
+        "day": "Monday",
+        "questions": [
+          {
+            "question": "1. Is there any indication of the denial-of-service (DoS) attack in the network traffic? If so, can you identify the source IP address responsible for the attack?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "2. Is there any indication of the denial-of-service (DoS) attack in the network traffic? If so, can you identify the targeted destination IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "3. Is there any indication of the denial-of-service (DoS) attack in the network traffic? If so, can you identify any specific HTTP request patterns or payloads that indicate a DoS activity?",
+            "answer": "no such entity"
+          }
+        ]
+      }
+    }
+  ]
+}

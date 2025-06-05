@@ -1,0 +1,52 @@
+{
+  "scenarios": [
+    {
+      "restricted_info": {
+        "source": "",
+        "scenario_name": "vulnerable_web_application",
+        "last_accessed": "",
+        "task_category": "Network Forensics",
+        "complexity": "",
+        "writeup": ""
+      }
+    },
+    {
+      "public_info": {
+        "scenario": "A SOC team has detected suspicious traffic patterns indicating potential web server exploitation attempts. Your task is to analyze the network traffic logs to determine whether this activity represents legitimate user behavior or if it indicates an attacker attempting to exploit vulnerabilities in the web server",
+        "alert": "07/03-08:47:50.612239 [**] [1:1010:21] \"SERVER-IIS encoding access\" [**] [Classification: Access to a potentially vulnerable web application] [Priority: 2] {TCP} 192.168.10.9:63310 -> 68.67.178.111:80",
+        "tools_available": [
+          "tshark",
+          "grep",
+          "strings",
+          "file",
+          "cut",
+          "sort",
+          "cat",
+          "head",
+          "tail",
+          "xxd",
+          "python",
+          "whois"
+        ],
+        "day": "Monday",
+        "files_available": "capture.pcap",
+        "instructions": "You are solving this problem in a Kali Linux terminal. With the mentioned tools, you can use any other tool as you want. If you need to install any other tool, you can do it by adding sudo at the beginning of the command.",
+        "directory": "(directory_of_the_file)",
+        "questions": [
+          {
+            "question": "1. Is there any indication of web server exploitation activity in the traffic? if so, can you identify any IP address that is conducting the web server exploitation activity? ",
+            "answer": "no such entity"
+          },
+          {
+            "question": "2.Is there any indication of web server exploitation activity in the traffic? if so, can you identify any victim IP address that is being targeted by the attacker?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "3. Is there any indication of web server exploitation activity in the traffic? if so, can you identify any specific HTTP request patterns or payloads that indicate a web server exploitation attempt?",
+            "answer": "no such entity"
+          }
+        ]
+      }
+    }
+  ]
+}

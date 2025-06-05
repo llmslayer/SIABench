@@ -1,0 +1,63 @@
+{
+  "scenarios": [
+    {
+      "restricted_info": {
+        "source": "",
+        "scenario_name": "Shellcode",
+        "last_accessed": "",
+        "task_category": "Network Forensics",
+        "complexity": "",
+        "writeup": ""
+      }
+    },
+    {
+      "public_info": {
+        "scenario": "An analyst detected suspicious traffic between an external IP address and a workstation within your organization's network, raising concerns of potential shellcode execution, which might suggest an attempt to exploit a vulnerability in a web browser or application. As the security analyst on duty, you are given a capture file and you need to investigate the network traffic capture to determine whether this is a benign activity or indication of compromise.",
+        "alert": "07/07-08:13:56.987424 [**] [1:1394:17] \"INDICATOR-SHELLCODE x86 inc ecx NOOP\" [**] [Classification: Executable code was detected] [Priority: 1] {TCP} 8.247.96.128:80 -> 192.168.10.25:49215",
+        "Day": "Friday",
+        "tools_available": [
+          "tshark",
+          "python",
+          "md5sum",
+          "grep",
+          "strings",
+          "file",
+          "cut",
+          "unique",
+          "wc",
+          "cat",
+          "ls",
+          "sort",
+          "echo",
+          "head",
+          "tail",
+          "xxd",
+          "base64",
+          "cd",
+          "whois"
+        ],
+        "files_available": "capture.pcap",
+        "instructions": "You are solving this problem in a Kali Linux terminal. You may use any of the listed tools or install additional tools using 'sudo' if required.",
+        "directory": "(directory_of_the_file)",
+        "questions": [
+          {
+            "question": "1. Is there any indication of shell code injection activity in the traffic? if so, can you identify the  source IP address responsible for this activity?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "2. Is there any indication of shell code injection activity, if so, can you identify the victim IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "3. Is there any indication of shell code injection activity, if so, can you identify any specific shellcode or payload that was injected? If so, what is it?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "4. Is there any indication of shell code injection activity, can you identify the type of shellcode injected?",
+            "answer": "no such entity"
+          }
+        ]
+      }
+    }
+  ]
+}

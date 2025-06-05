@@ -1,0 +1,52 @@
+{
+  "scenarios": [
+    {
+      "restricted_info": {
+        "source": "",
+        "scenario_name": "Doc_Access",
+        "last_accessed": "",
+        "task_category": "Network Forensics",
+        "complexity": "",
+        "writeup": ""
+      }
+    },
+    {
+      "public_info": {
+        "scenario": "A SOC team has identified a network alert related to access to a potentially sensitive or uncommon web application endpoint resembling a documentation or administrative path. Your task is to analyze the alert and any associated traffic to determine whether the activity represents typical user behavior or indicates a possible attempt to exploit the web server.",
+        "alert": "07/03-10:25:34.417585 [**] [1:1560:14] \"SERVER-WEBAPP /doc/ access\" [**] [Classification: Access to a potentially vulnerable web application] [Priority: 2] {TCP} 192.168.10.9:2883 -> 23.194.182.116:80",
+        "tools_available": [
+          "tshark",
+          "grep",
+          "strings",
+          "file",
+          "cut",
+          "sort",
+          "cat",
+          "head",
+          "tail",
+          "xxd",
+          "python",
+          "whois"
+        ],
+        "day": "Monday",
+        "files_available": "capture.pcap",
+        "instructions": "You are solving this problem in a Kali Linux terminal. With the mentioned tools, you can use any other tool as you want. If you need to install any other tool, you can do it by adding sudo at the beginning of the command.",
+        "directory": "(directory_of_the_file)",
+        "questions": [
+          {
+            "question": "1. Can you identify any source IP address that is conducting the web server exploitation activity? If so, what is the IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "2. Can you identify any destination IP address that is being targeted by the web server exploitation activity? If so, what is the IP address?",
+            "answer": "no such entity"
+          },
+          {
+            "question": "3. Can you identify any specific HTTP request patterns or payloads that indicate a web server exploitation attempt? If so, what are they?",
+            "answer": "no such entity"
+          }
+        ]
+      }
+    }
+  ]
+}

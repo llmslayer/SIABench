@@ -3,7 +3,7 @@
     {
       "restricted_info": {
         "source": "",
-        "scenario_name": "tp_port_scan_1",
+        "scenario_name": "tp_ftp",
         "last_accessed": "",
         "task_category": "",
         "complexity": "",
@@ -12,8 +12,8 @@
     },
     {
       "public_info": {
-        "scenario": "The soc team got an alert from the IDS. The alert is: 07/07-13:55:01.154623 [**] [122:1:1] '(port_scan) TCP portscan' [**] [Priority: 3] {TCP} 172.16.0.1:41140 -> 192.168.10.50:5900",
-        "alert": "07/07-13:55:01.154623 [**] [122:1:1] \"(port_scan) TCP portscan\" [**] [Priority: 3] {TCP} 172.16.0.1:41140 -> 192.168.10.50:5900",
+        "scenario": "The soc team got an alert from the IDS. The alert is: 07/04-09:20:01.417087 [**] [1:491:15] \"PROTOCOL-FTP Bad login\" [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.10.50:21 -> 172.16.0.1:60100",
+        "alert": "07/04-09:20:01.417087 [**] [1:491:15] \"PROTOCOL-FTP Bad login\" [**] [Classification: Potentially Bad Traffic] [Priority: 2] {TCP} 192.168.10.50:21 -> 172.16.0.1:60100",
         "tools_available": [
           "tshark",
           "python",
@@ -41,7 +41,7 @@
         "questions": [
           {
             "question": "Analyze the provided PCAP file and determine if the generated alert is a false positive or true positive.",
-            "answer": "real attack"
+            "answer": "true positive"
           }
         ]
       }

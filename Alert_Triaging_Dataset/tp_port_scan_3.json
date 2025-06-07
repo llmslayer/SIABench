@@ -3,7 +3,7 @@
     {
       "restricted_info": {
         "source": "",
-        "scenario_name": "tp_ssh",
+        "scenario_name": "tp_port_scan_3",
         "last_accessed": "",
         "task_category": "",
         "complexity": "",
@@ -12,8 +12,8 @@
     },
     {
       "public_info": {
-        "scenario": "The soc team got an alert from the IDS. The alert is: 07/04-14:07:21.893671 [**] [1:1325:14] \"INDICATOR-SHELLCODE ssh CRC32 overflow filler\" [**] [Classification: Executable code was detected] [Priority: 1] {TCP} 172.16.0.1:52054 -> 192.168.10.50:22",
-        "alert": "07/04-14:07:21.893671 [**] [1:1325:14] \"INDICATOR-SHELLCODE ssh CRC32 overflow filler\" [**] [Classification: Executable code was detected] [Priority: 1] {TCP} 172.16.0.1:52054 -> 192.168.10.50:22",
+        "scenario": "The soc team got an alert from the IDS. The alert is: 07/07-14:22:02.313683 [**] [122:1:1] \"(port_scan) TCP portscan\" [**] [Priority: 3] {TCP} 172.16.0.1:35609 -> 192.168.10.50:135",
+        "alert": "07/07-14:22:02.313683 [**] [122:1:1] \"(port_scan) TCP portscan\" [**] [Priority: 3] {TCP} 172.16.0.1:35609 -> 192.168.10.50:135",
         "tools_available": [
           "tshark",
           "python",
@@ -41,7 +41,7 @@
         "questions": [
           {
             "question": "Analyze the provided PCAP file and determine if the generated alert is a false positive or true positive.",
-            "answer": "real attack"
+            "answer": "true positive"
           }
         ]
       }

@@ -70,7 +70,7 @@
             "adversarial_tactic": "Execution: Identifying suspicious processes aligns with Execution since it reveals processes that may be actively executing malicious actions within the system."
           },
           {
-            "question": "6. If you can any evidence of suspicious executable, determine the compilation timestamp of the suspicious executable identified ?",
+            "question": "6. If you can find any evidence of suspicious executable, can you determine the compilation timestamp of the suspicious executable identified? If so, what is the compilation timestamp?",
             "answer": "2019-12-01 08:36:04.",
             "adversarial_tactic": "Execution: Identifying the compilation timestamp of a suspicious executable can provide insights into the malware's development timeline."
           }

@@ -56,7 +56,7 @@
             "adversarial_tactic": "Defense Evasion: Deleting logs suggests an attempt to cover tracks, while package management may point to tool acquisition by adversaries."
           },
           {
-            "question": "3. Check the message written to /etc/motd for any contact information provided by the attacker. If any email address is included, provide it here.",
+            "question": "3. Can you find any message written to /etc/motd for any contact information provided by the attacker. If any email address is included, provide it here.",
             "answer": "nationalsiense@protonmail.com",
             "adversarial_tactic": "Impact: Contact information in the message can be used by attackers to negotiate ransom payments or communicate with victims."
           },
@@ -66,7 +66,7 @@
             "adversarial_tactic": "Impact: Unique file extensions are typically added to encrypted files as part of ransomware's impact on the system."
           },
           {
-            "question": "5. Can you identify any function names related to encryption in the script? If so, please provide the function names.",
+            "question": "5. Can you identify any function names related to encryption in the script? If so, provide the function names.",
             "answer": "encrypt_ssh, encrypt_grep_files, encrypt_home, encrypt_root, encrypt_db",
             "adversarial_tactic": "Impact: Identifying encryption functions can help understand the ransomware's behavior and its impact on the system."
           },

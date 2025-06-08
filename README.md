@@ -1,6 +1,6 @@
 # SIABench 🚀
 
-Welcome to the **SIABench** repository! This benchmark is designed for **Security Incident Analysis (SIA)** tasks, encompassing various cybersecurity investigation domains such as **Memory Forensics, Malware Analysis, Network Forensics, and more.**
+Welcome to the **SIABench** repository! This benchmark is designed for **Security Incident Analysis** tasks, encompassing various cybersecurity investigation domains such as **Memory Forensics, Malware Analysis, Network Forensics, and more.**
 
 ## Overview
 
@@ -88,7 +88,7 @@ SIA Agent has been tested and integrated with **9 popular LLMs**:
 |-------|----------|-------------------|
 | Claude-3.5-Sonnet | Anthropic | [Claude API](https://docs.anthropic.com/en/docs/about-claude/models/all-models) |
 | GPT-4o | OpenAI | [OpenAI API](https://platform.openai.com/docs/overview) |
-| DeepSeek-Reasoner | DeepSeek | [DeepSeek API](https://api-docs.deepseek.com/guides/reasoning_model) |
+| DeepSeek-Reasoner | DeepSeek | [Fireworks API](https://fireworks.ai/models) |
 | o3-mini | OpenAI | [OpenAI API](https://platform.openai.com/docs/overview) |
 | GPT-4o-mini | OpenAI | [OpenAI API](https://platform.openai.com/docs/overview) |
 | Gemini-1.5-pro | Google | [Google Gemini API](https://ai.google.dev/) |
@@ -106,13 +106,16 @@ SIABench/
 │   ├── SIA_Dataset.md             # Dataset structure and format documentation
 │   └── [scenario files...]        # JSON files with security scenarios
 ├── Alert_Triaging_Dataset/         # Contains JSON files with Alert triaging scenarios
+│   ├── Alert_Triaging_Dataset.md             # Dataset structure and format documentation
+│   └── [scenario files...]        # JSON files with security scenarios
 └── README.md                       # This file
 ```
 
 ### 📋 Dataset Documentation
 
-For detailed information about the SIA dataset structure, format, and examples, please refer to:
+For detailed information about the SIA and Alert Triaging dataset structure, format, and examples, please refer to:
 - **[SIA_Dataset.md](./SIA_Dataset/SIA_Dataset.md)** - Complete documentation of the SIA dataset structure, question types, and data format
+- - **[Alert_Triaging_Dataset.md](./Alert_Triaging_Dataset/Alert_Triaging_Dataset.md)** - Complete documentation of the Alert Triaging dataset structure, question types, and data format
 
 ---
 

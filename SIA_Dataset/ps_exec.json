@@ -56,10 +56,10 @@
           {
             "question": "3. Do you think there was any authentication step used by any suspicious user? If so, what was the username utilized?",
             "answer": "ssales",
-            "adversarial_tactic": "Execution: Verifying the file hash allows analysts to correlate it with known threat intelligence."
+            "adversarial_tactic": "Credential Access: Identifying the username used during the attack helps understand how the attacker authenticated to the system."
           },
           {
-            "question": "4. Can you identify any service executable that has been set up on the target by any suspicous user? If so, what is it?",
+            "question": "4. Can you identify any service executable that has been set up on the target by any suspicious user? If so, what is it?",
             "answer": "PSEXESVC",
             "adversarial_tactic": "Execution: Understanding how the file behaves post-delivery informs the detection of execution paths."
           },

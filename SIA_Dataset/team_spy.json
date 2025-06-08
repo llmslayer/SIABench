@@ -82,7 +82,7 @@
             "adversarial_tactic": "Persistence: The system identifier for remote access likely provides the attacker with Persistence, enabling repeated access to the compromised system."
           },
           {
-            "question": "9. Within the 'ecorpoffice/win7ecorpoffice.vmem', can you identify any signs of recent external connections through remote access tool? If so, what IPv4 address is associated with the latest remote access connection?",
+            "question": "9. Within the 'ecorpoffice/win7ecorpoffice.vmem', can you identify any signs of recent external connections through remote access tool? If so, what IP address is associated with the latest remote access connection?",
             "answer": "31.6.13.155",
             "adversarial_tactic": "Command and Control: Identifying IPs associated with remote connections indicates Command and Control (C2) tactics, where attackers establish channels to control compromised systems."
           },

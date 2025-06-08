@@ -69,7 +69,7 @@
             "adversarial_tactic": "Execution: Web shells are used to execute commands on a target system, indicating a more advanced stage of compromise."
           },
           {
-            "question": "7. If there is any indication of web shell upload in the traffic,can you identify any file through which the attacker uploaded the web shell? If so, what is the file name?",
+            "question": "7. If there is any indication of web shell upload in the traffic, can you identify any file through which the attacker uploaded the web shell? If so, what is the file name?",
             "answer": "editprofile.php",
             "adversarial_tactic": "Initial Access: Through the file upload, the attacker may attempt to gain initial access to the target system."
           },

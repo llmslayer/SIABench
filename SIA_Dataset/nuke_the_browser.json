@@ -74,17 +74,17 @@
             "adversarial_tactic": "Defense Evasion: Logic to avoid infecting the same host twice indicates Defense Evasion, as the code is designed to minimize detection by reducing suspicious activity on known hosts"
           },
           {
-            "question": "7. Can you identify any obfuscated JS at 'shop.honeynet.sg/catalog'? If so, can you deobfuscate to find the value of the 'click' parameter?",
+            "question": "7. Can you identify any obfuscated script at 'shop.honeynet.sg/catalog'? If so, can you deobfuscate to find the value of the 'click' parameter?",
             "answer": "84c090bd86",
             "adversarial_tactic": "Defense Evasion: Deobfuscation analysis supports Defense Evasion by exposing how the script avoids detection (e.g., hiding its purpose or functionality within encoded content)."
           },
           {
-            "question": "8.Can you identify any obfuscated JS at 'rapidshare.com.eyu32.ru/login.php'? If you can find any, can you deobfuscate to find the value of the 'click' parameter?",
+            "question": "8.Can you identify any obfuscated script at 'rapidshare.com.eyu32.ru/login.php'? If you can find any, can you deobfuscate to find the value of the 'click' parameter?",
             "answer": "3feb5a6b2f",
             "adversarial_tactic": "Defense Evasion: Similar to question 9, this deobfuscation of JavaScript aligns with Defense Evasion as it reveals obfuscation strategies to hide malicious actions within scripts."
           },
           {
-            "question": "9. Can you find any evidence of any executable file that seems to be suspicious? If so, examine the metadata in the executable to determine the version of 'mingw-gcc' used to compile the malware. What version is indicated?",
+            "question": "9. Can you find any evidence of any executable file that seems to be suspicious? If so, can you examine the metadata in the executable to determine the version of 'mingw-gcc' used to compile the malware?",
             "answer": "3.4.5",
             "adversarial_tactic": "Execution: Identifying the compiler version (e.g., mingw-gcc 3.4.5) is relevant to Execution, as it helps understand the malwares origin and potential development environment."
           },

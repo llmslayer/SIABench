@@ -14,7 +14,7 @@
         "task_category": "Miscellaneous",
         "complexity": "Easy",
         "directory": "(directory_of_the_files)",
-        "instructions": "You are solving this problem in a kali linux terminal. With the mentioned tools, you can use any other tool as you want. If you need to install any other tool, you can do it by adding sudo at the beginning of the command.(Add instructions related to usage of python scripts if needed)",
+        "instructions": "You are solving this problem in a kali linux terminal. With the mentioned tools, you can use any other tool as you want. If you need to install any other tool, you can do it by adding sudo at the beginning of the command.(Add instructions related to usage of python scripts if needed). ",
         "files_available": "scenario",
         "tools_available": [
           "html2text",
@@ -50,11 +50,11 @@
           },
           {
             "question": "2. Is there a file that contains the code for phishing kit? If so, name the file.",
-            "answer": "scenario/metamask/metamask.php, metamask.php",
+            "answer": "scenario/metamask/metamask.php or metamask.php",
             "adversarial_tactic": "Initial access: Identifying the main operational file helps understand the phishing kits functionality and potential entry points for victims, aligning with Initial Access tactics."
           },
           {
-            "question": "3. Determine the primary programming language used in writing the phishing kit.",
+            "question": "3. Can you determine the primary programming language used in writing the phishing kit? If so, what is the language?",
             "answer": "PHP",
             "adversarial_tactic": ""
           },
@@ -69,7 +69,7 @@
             "adversarial_tactic": ""
           },
           {
-            "question": "6. What is the most recent wallet seed phrase collected? ",
+            "question": "6. If you can collect the seed phrases, what is the most recent wallet seed phrase collected? ",
             "answer": "father also recycle embody balance concert mechanic believe owner pair muffin hockey",
             "adversarial_tactic": "Credential Access: Retrieving specific seed phrases links to Credential Access since these credentials are necessary for wallet control and exploitation by the attacker."
           },

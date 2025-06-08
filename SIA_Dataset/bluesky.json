@@ -49,17 +49,17 @@
             "adversarial_tactic": "Initial Access: Adversaries may obtain and abuse credentials of existing accounts to gain unauthorized access."
           },
           {
-            "question": "3. We need to determine if the attacker succeeded in gaining access. Can you provide the correct password discovered by the attacker?",
+            "question": "3. Did the attacker succeed in gaining access. If so, can you provide the correct password discovered by the attacker?",
             "answer": "cyb3rd3f3nd3r$",
             "adversarial_tactic": "Initial Access: Adversaries may obtain and abuse credentials of existing accounts to gain unauthorized access."
           },
           {
-            "question": "4. Attackers often change some settings to facilitate lateral movement within a network. If there is any change, what setting did the attacker enable to control the target host further and execute further commands?",
+            "question": "4. Attackers often change some settings to facilitate lateral movement within a network. Do you think if there is any change, if so, what setting did the attacker enable to control the target host further and execute further commands?",
             "answer": "xp_cmdshell",
             "adversarial_tactic": "Lateral Movement: Enabling specific settings facilitates unauthorized control over the network."
           },
           {
-            "question": "5. Process injection is often used by attackers to escalate privileges within a system. Is there any process the attacker injectd the C2 into to gain administrative privileges?",
+            "question": "5. Process injection is often used by attackers to escalate privileges within a system. Is there any process the attacker injected the C2 into to gain administrative privileges?",
             "answer": "winlogon.exe",
             "adversarial_tactic": "Privilege Escalation: Injecting into processes is used to escalate privileges and maintain persistence."
           },

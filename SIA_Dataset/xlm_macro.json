@@ -49,7 +49,7 @@
             "adversarial_tactic": "Defense Evasion: Attackers often use password protection to evade detection and complicate analysis by restricting access to document contents."
           },
           {
-            "question": "2. From sample1.bin, ca you identify any hidden sheets  in sample1.bin? If so, what is the name of the sheet that starts with the letter 'S'?",
+            "question": "2. From sample1.bin, can you identify any hidden sheets  in sample1.bin? If so, what is the name of the sheet that starts with the letter 'S'?",
             "answer": "SOCWNEScLLxkLhtJp",
             "adversarial_tactic": "Defense Evasion: Hidden sheets and workbook elements conceal malicious code or indicators, helping evade security tools and analysts."
           },
@@ -59,7 +59,7 @@
             "adversarial_tactic": "Command and Control: URLs for secondary payloads are often embedded for command and control communication, enabling attackers to download additional components."
           },
           {
-            "question": "4. From sample1.bin, can you identify any file that appears to be downloaded or referenced as suspicious executables? If so, what is the name of the file? if so, what is the name of the file?",
+            "question": "4. From sample1.bin, can you identify any file that appears to be downloaded or referenced as suspicious executables? If so, what is the name of the file? ",
             "answer": "ixcxmzcvqui.exe",
             "adversarial_tactic": "Execution: Executable references in macros indicate potential malware that will be executed upon download, contributing to the Execution tactic."
           },

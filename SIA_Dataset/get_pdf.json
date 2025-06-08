@@ -77,12 +77,12 @@
             "adversarial_tactic": "Defense Evasion: Attackers often use filtered streams to obfuscate content, hence inspecting filtering schemes supports Defense Evasion by detecting potential obfuscation techniques."
           },
           {
-            "question": "7. Does the PDF file contain any object streams with JavaScript code that seem to be suspicious? If so, what is the number of the object stream containing the code?",
+            "question": "7. Does the PDF file contain any object streams with any code snippets that seem to be suspicious? If so, what is the number of the object stream containing the code?",
             "answer": "'5'",
             "adversarial_tactic": "Execution: Locating JavaScript in PDFs ties to Execution as embedded scripts in PDF objects can be used to deliver payloads when the file is opened in a PDF reader."
           },
           {
-            "question": "8. Analyze the content of the PDF file and determine if it contains any known exploits, such as those related to CVE-2010-0188. If so, what is the URL of the malicious executable that the shellcode associated with this exploit drop?",
+            "question": "8. Analyze the content of the PDF file and determine if it contains any exploit. If so, what is the URL of the malicious executable that the shellcode associated with the exploit drop?",
             "answer": "'http://blog.honeynet.org.my/forensic_challenge/the_real_malware.exe'.",
             "adversarial_tactic": "Execution: The shellcode could be dropping and executing a malicious executable."
           }

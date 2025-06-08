@@ -42,7 +42,7 @@
         "directory": "(directory_of_the_files)",
         "questions": [
           {
-            "question": "1. Analyze the streams in the document. If any macros are present, identify the highest-numbered stream that contains a macro.",
+            "question": "1. Can you identify if there are macros present in the document, identify the highest-numbered stream that contains a macro.",
             "answer": "16.",
             "adversarial_tactic": "Execution: Understanding the presence of macros helps identify potential malicious code execution within the document."
           },

@@ -69,7 +69,7 @@
           },
           {
             "question": "6. If there is any evidence of cron jobs, can you identify the contents of the cron job file? If so, what command is being executed by the cron job?",
-            "answer": "The full path of the cronjob file is /var/spool/cron/crontabs/root and its inode number is 131127",
+            "answer": "* * * * * cp /opt/.bashrc/root/.bashrc",
             "adversarial_tactic": "Persistence: The cron job may be designed to ensure continuous execution of malicious commands or scripts."
           }
         ]

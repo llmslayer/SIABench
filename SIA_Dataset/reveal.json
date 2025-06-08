@@ -64,7 +64,7 @@
             "adversarial_tactic": "Lateral Movement: Accessing shared directories on remote systems indicates potential lateral movement."
           },
           {
-            "question": "5. Can you identify the username under which the suspicious process is running. If so, what is the username?",
+            "question": "5. Can you identify any username under which the suspicious process is running. If so, what is the username?",
             "answer": "Elon",
             "adversarial_tactic": "Privilege Escalation: Understanding compromised accounts helps assess attacker privileges."
           }

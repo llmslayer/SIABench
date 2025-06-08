@@ -104,7 +104,7 @@
             "adversarial_tactic": "Execution: Identifying files such as executables and their hashes can help in understanding the executed potential malware involved in the attack."
           },
           {
-            "question": "13. Can you identify if threr is any software that runs the web server hosting the suspicious file downloaded by the victim's computer? If so, can you provide the name of the software?",
+            "question": "13. Can you identify if there is any software that runs the web server hosting the suspicious file downloaded by the victim's computer? If so, can you provide the name of the software?",
             "answer": "LiteSpeed.",
             "adversarial_tactic": "Initial Access: Understanding the server software can help from where the malicious file was downloaded and how the attacker gained initial access to the victim's machine."
           },

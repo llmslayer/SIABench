@@ -58,7 +58,7 @@
           },
           {
             "question": "5. Can you find any obfuscated scripts in the document? If so, what is the name of the scripting language used in the obfuscated code?",
-            "answer": "JScript",
+            "answer": "JavaScript",
             "adversarial_tactic": "Execution: Identifying the scripting language used helps determine the execution context, required interpreters, and potential system implications, which is crucial for both detection and remediation."
           }
         ]

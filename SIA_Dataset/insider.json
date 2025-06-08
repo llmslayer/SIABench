@@ -94,7 +94,7 @@
             "adversarial_tactic": "Credential Access: Attempting to access the root account is a common tactic used by attackers to gain elevated privileges and control over the system."
           },
           {
-            "question": "11. Can you identify what was the last active directory in the filesystem before the disk image was created? If so, what is the absolute path of the directory?",
+            "question": "11. Can you identify the last active directory in the filesystem before the disk image was created? If so, what is the absolute path of the directory?",
             "answer": "/root/Documents/myfirsthack/",
             "adversarial_tactic": ""
           }

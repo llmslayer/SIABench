@@ -1,164 +1,131 @@
-# Cybersecurity Scenarios JSON Data Structure
 
-This document outlines the standardized JSON data structure used in the **SIABench.** 
 
----
+## 🎯 Overview
 
-## 📘 Overview
+The following JSON format provides a standardized structure for security incident analysis scenarios. This format enables **Automated evaluation** of LLM agents in SIA tasks.
 
-The SIABench JSON format is designed to encapsulate detailed information about cybersecurity incident analysis (SIA) tasks. It includes:
-
-- Scenario metadata  
-- Task instructions  
-- Investigation questions  
-- Ground truth answers and evaluation parameters  
-
-This structure supports automated evaluation workflows within an LLM agentic framework.
+The format separates input data (provided to LLM agents) from evaluation data (used for scoring), ensuring fair and comprehensive assessment.
 
 ---
 
-## 🗂️ Root Structure
+## 🏗️ Root Structure
 
 ```json
 {
   "scenarios": [
-    // Array of scenario objects
+    {
+      "metadata": { "..." },
+      "sia_components": { "..." }
+    }
   ]
 }
 ```
 
-The root-level `scenarios` array contains one or more scenario objects, each representing a complete incident scenario.
+**Key Points:**
+
+- Root object contains a `scenarios` array
+- Each scenario is self-contained with all necessary information
+- Each scenario represents a complete cybersecurity incident or challenge
 
 ---
 
-## 🧩 Scenario Object Structure
+## 🧩 Scenario Object Components
 
-Each scenario object contains two main sections:
+Each scenario object consists of two main sections that serve distinct purposes:
 
-### 1. 🔖 Metadata
+### 🔖 Metadata Section
+
+Contains reference information about the scenario source.
 
 ```json
 "metadata": {
-  "source": "string",
-  "scenario_name": "string",
-  "last_accessed": "string",
-  "writeup": "string"
+  "source": "https://example.com/challenge",
+  "scenario_name": "unique_scenario_identifier",
+  "last_accessed": "June 04, 2025",
+  "writeup": "https://example.com/solution"
 }
 ```
 
-**Fields:**
-- `source`: Link or reference to the original challenge source  
-- `scenario_name`: Unique identifier for the scenario  
-- `last_accessed`: Last accessed date (e.g., "June 04, 2026")  
-- `writeup`: Link to the solution or investigation write-up  
+| Field           | Type   | Purpose                              | Example                                            |
+| --------------- | ------ | ------------------------------------ | -------------------------------------------------- |
+| `source`        | String | Original challenge URL or reference  | `"https://blueteamlabs.online/home/challenge/..."` |
+| `scenario_name` | String | Unique identifier for the scenario   | `"BTLO_Ransomware_Script"`                         |
+| `last_accessed` | String | Date when scenario was last accessed | `"June 04, 2025"`                                  |
+| `writeup`       | String | Link to solution documentation       | `"https://medium.com/@author/solution"`            |
 
----
+### 🧪 SIA Components Section
 
-### 2. 🧪 SIA Components
-
-The `sia_components` section contains the core information for scenario-based analysis:
-
-#### 📝 Basic Information
-
-- `scenario`: Description of the cybersecurity incident  
-- `task_category`: Classification (e.g., *Network Forensics*, *Malware Analysis*, *Memory Forensics*, *Miscellaneous*)  
-- `complexity`: Difficulty level (e.g., *Easy*, *Medium*, *Hard*)  
-
-#### 🛠️ Technical Environment
-
-- `tools_available`: List of suggested tools  
-- `files_available`: Filename(s) provided for analysis  
-- `instructions`: Tool and environment instructions  
-- `directory`: Working directory path for files  
-
-#### ❓ Questions Array
-
-Each question object has the following structure:
+Contains the core scenario data, questions, and evaluation fields.
 
 ```json
-{
-  "question": "string",
-  "answer": "string",
-  "adversarial_tactic": "string"
-}
-```
-
-**Fields:**
-- `question`: A question the LLM must answer based on scenario data  
-- `answer`: Ground truth response used for evaluation  
-- `adversarial_tactic`: Mapped MITRE ATT&CK tactic for evaluation  
-
----
-
-## 💡 Example Scenario
-
-```json
-{
-  "metadata": {
-    "source": "https://blueteamlabs.online/home/challenge/network-analysis-web-shell-d4d3a2821b",
-    "scenario_name": "Btlo_port_scanning",
-    "last_accessed": "June 04, 2026",
-    "writeup": "https://medium.com/btlo-investigation-solutions/btlo-network-analysis-web-shell-9fa8d3135b6"
-  },
-  "sia_components": {
-    "scenario": "An analyst detects unusual network activity...",
-    "task_category": "Network Forensics",
-    "complexity": "Easy",
-    "tools_available": ["tshark", "python", "grep", "strings"],
-    "files_available": "capture.pcap",
-    "instructions": "Use tshark and grep to identify suspicious activity.",
-    "directory": "/home/analyst/btlo/portscan",
-    "questions": [
-      {
-        "question": "Based on the network traffic, is there any indication of port scanning activity?",
-        "answer": "Yes, the network traffic shows clear indications of port scanning activity.",
-        "adversarial_tactic": "Reconnaissance: Port scanning is commonly used for identifying open ports..."
-      }
-    ]
-  }
+"sia_components": {
+  "scenario": "...",
+  "tools_available": ["..."],
+  "files_available": ["..."],
+  "instructions": "...",
+  "directory": "...",
+  "questions": ["..."],
+  "answer": "...",
+  "task_category": "...",
+  "complexity": "...",
+  "adversarial_tactic": "..."
 }
 ```
 
 ---
 
-## 🧠 LLM Input vs. Evaluation Components
+## 📊 Component Categories
 
-To enable structured and efficient processing, `sia_components` are split into two categories:
+The SIA components are strategically divided into two categories to maintain evaluation integrity:
 
 ### 🔵 LLM Input Components
 
-Provided to the LLM agent to reason about and answer questions:
+**Purpose:** Information provided to the LLM agent for solving the task.
+
+#### Core Fields:
+
+| Field             | Type   | Description                            |
+| ----------------- | ------ | -------------------------------------- |
+| `scenario`        | String | An incident scenario description  |
+| `tools_available` | Array  | List of available suggested command-line tools   |
+| `files_available` | Array  | Files provided for analysis            |
+| `instructions`    | String | Environment setup and usage guidelines |
+| `directory`       | String | Working directory path                 |
+| `questions`       | Array  | Questions to be answered by the LLM    |
+
+#### Example:
 
 ```json
 {
-  "scenario": "...",
-  "tools_available": [...],
-  "files_available": "...",
-  "instructions": "...",
-  "directory": "...",
+  "scenario": "A recent ransomware attack compromised one of our web servers...",
+  "tools_available": ["tshark", "python", "grep", "strings", "..."],
+  "files_available": ["network.pcap"],
+  "instructions": "You are working in a Kali Linux environment. Use the provided tools to analyze the files.",
+  "directory": "/home/analyst/investigation",
   "questions": ["..."]
 }
 ```
 
 ### 🔴 Evaluation Components
 
-Used solely for automated scoring and benchmarking:
+**Purpose:** Ground truth data used exclusively for automated scoring
 
-```json
-{
-  "task_category": "...",
-  "complexity": "...",
-  "answer": "...",
-  "adversarial_tactic": "..."
-}
-```
+#### Core Fields:
 
+| Field                | Type   | Description                         |
+| -------------------- | ------ | ----------------------------------- |
+| `task_category`      | String | Type of cybersecurity analysis      |
+| `complexity`         | String | Difficulty level (Easy/Medium/Hard) |
+| `answer`             | String | Expected correct answer             |
+| `adversarial_tactic` | String | MITRE ATT&CK framework mapping      |
 
-
----
-
-## 📌 Summary
-
-This JSON specification is foundational to building reproducible, evaluable, and scalable cybersecurity training and assessment scenarios using LLMs. By adhering to this structure, contributors can create scenarios that are both informative and compatible with automated evaluation pipelines.
-
----
+#### Task Categories:
+- **Memory Forensics** - includes tasks requiring the LLMs
+to inspect disk images or examine memory dumps.
+- **Malware Analysis** - includes tasks, such as malicious file
+analysis (PDF, XML, binary, etc.), static code review, and
+inspecting ransomware scripts.
+- **Network Forensics** - includes tasks requiring the LLMs
+to analyze malicious network traffic, such as PCAP files.
+- **Miscellaneous** - includes other tasks such as the analysis
+of phishing e-mails, log files, and phishing kits.

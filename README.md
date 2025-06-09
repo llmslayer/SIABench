@@ -78,6 +78,7 @@ We evaluate different LLMs with our dataset using the [🤖 SIABench Agent].
 
 ---
 
+
 ## 🧠 Model Integrations
 
 ### ✅ Evaluated Models
@@ -116,6 +117,14 @@ SIABench/
 For detailed information about the SIA and Alert Triaging dataset structure, format, and examples, please refer to:
 - **[SIA_Dataset.md](./SIA_Dataset/SIA_Dataset.md)** - Complete documentation of the SIA dataset structure, question types, and data format
 - **[Alert_Triaging_Dataset.md](./Alert_Triaging_Dataset/Alert_Triaging_Dataset.md)** - Complete documentation of the Alert Triaging dataset structure, question types, and data format
+
+---
+
+## 🏆 Leaderboard
+
+**📊 Interactive Leaderboard Coming Soon!**
+
+Stay tuned for updates! 🚀
 
 ---
 

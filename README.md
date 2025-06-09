@@ -78,6 +78,13 @@ We evaluate different LLMs with our dataset using the [🤖 SIABench Agent].
 
 ---
 
+## 🏆 Leaderboard
+
+**📊 Interactive Leaderboard Coming Soon!**
+
+Stay tuned for updates! 🚀
+
+---
 
 ## 🧠 Model Integrations
 
@@ -107,8 +114,9 @@ SIABench/
 │   ├── SIA_Dataset.md             # Dataset structure and format documentation
 │   └── [scenario files...]        # JSON files with security scenarios
 ├── Alert_Triaging_Dataset/         # Contains JSON files with Alert triaging scenarios
-│   ├── Alert_Triaging_Dataset.md             # Dataset structure and format documentation
+│   ├── Alert_Triaging_Dataset.md  # Dataset structure and format documentation
 │   └── [scenario files...]        # JSON files with security scenarios
+├── ETHICS.md                       # Ethics statement and responsible use guidelines
 └── README.md                       # This file
 ```
 
@@ -118,13 +126,12 @@ For detailed information about the SIA and Alert Triaging dataset structure, for
 - **[SIA_Dataset.md](./SIA_Dataset/SIA_Dataset.md)** - Complete documentation of the SIA dataset structure, question types, and data format
 - **[Alert_Triaging_Dataset.md](./Alert_Triaging_Dataset/Alert_Triaging_Dataset.md)** - Complete documentation of the Alert Triaging dataset structure, question types, and data format
 
----
+### 🛡️ Ethics and Responsible Use
 
-## 🏆 Leaderboard
-
-**📊 Interactive Leaderboard Coming Soon!**
-
-Stay tuned for updates! 🚀
+Please review our **[Ethics Statement](./ETHICS.md)** which covers:
+- Data compliance and curation practices
+- Risk assessment and mitigation strategies
+- Responsible use guidelines for researchers and practitioners
 
 ---
 

@@ -2,7 +2,7 @@
   "scenarios": [
     {
       "metadata": {
-        "scenario_name": "fp_ddos"
+        "scenario_name": "ds1"
       }
     },
     {

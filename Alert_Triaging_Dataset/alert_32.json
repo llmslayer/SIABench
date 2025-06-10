@@ -2,7 +2,7 @@
   "scenarios": [
     {
       "metadata": {
-        "scenario_name": "tp_port_scan_1"
+        "scenario_name": "s1"
       }
     },
     {

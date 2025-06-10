@@ -2,7 +2,7 @@
   "scenarios": [
     {
       "metadata": {
-        "scenario_name": "fp_info_leak"
+        "scenario_name": "if1"
       }
     },
     {

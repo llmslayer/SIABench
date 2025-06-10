@@ -49,3 +49,6 @@ The following JSON format provides a standardized structure for security inciden
 **For LLM Input:** Use all fields except `questions[].answer and alert`
 
 **For Evaluation:** Compare LLM responses against `questions[].answer`
+
+
+**Note:** The PCAP file are given in the following [link](https://drive.google.com/file/d/1a06-pXmFRuCPMQtbt6lqk1Vc7UGnG40m/view?usp=sharing). Each scenario name corresponds to its respective PCAP folder. 

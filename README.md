@@ -128,7 +128,7 @@ For detailed information about the SIA and Alert Triaging dataset structure, for
 
 ### 🛡️ Ethics and Responsible Use
 
-Please review our **[Ethics Statement](./ETHICS.md)** which covers:
+Please review our **[Ethics Statement](./Ethics.md)** which covers:
 - Data compliance and curation practices
 - Risk assessment and mitigation strategies
 - Responsible use guidelines for researchers and practitioners

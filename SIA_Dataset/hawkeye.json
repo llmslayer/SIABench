@@ -79,7 +79,7 @@
             "adversarial_tactic": ""
           },
           {
-            "question": "8. If there any domain queried in packet 204 by one of the computers in the network, if so, what is the domain?",
+            "question": "8. Can you determine if there is any domain queried in packet 204 by one of the computers in the network, if so, what is the domain?",
             "answer": "proforma-invoices.com.",
             "adversarial_tactic": ""
           },
@@ -140,12 +140,12 @@
             "adversarial_tactic": "Exfiltration: Identifying the password used for exfiltration is crucial for understanding the adversary's techniques and the exfiltration process."
           },
           {
-            "question": "20. Based on your analysis, which malware variant was responsible for exfiltrating the stolen data?",
+            "question": "20. Based on your analysis, can you determine which malware variant was responsible for exfiltrating the stolen data?",
             "answer": "Reborn v9.",
             "adversarial_tactic": "Exfiltration: Identifying the malware variant is crucial for understanding the adversary's techniques and the exfiltration process."
           },
           {
-            "question": "21. Analyze the network traffic to extract if there you can find Bank of America login credentials (username and password) involved in the data exfiltration attempt. If you find, provide the credentials.",
+            "question": "21. Analyze the network traffic to extract if you can find any Bank of America login credentials (username and password) involved in the data exfiltration attempt. If you can find, provide the credentials.",
             "answer": "Troman.mcguire:P@ssw0rd$.",
             "adversarial_tactic": "Credential Access: Finding login credentials exfiltrated during the attack highlights credential-harvesting goals, directly aligning with the Credential Access tactic where the attacker seeks to steal sensitive information."
           }

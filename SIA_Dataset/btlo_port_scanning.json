@@ -84,7 +84,7 @@
             "adversarial_tactic": "Command and Control (C2): Establishing a reverse shell indicates that the attacker has set up a command and control channel to maintain a persistent connection to the target system."
           },
           {
-            "question": "10. From the reverse shell connection initiated by the attacker, can you identify if there are any ports used for the shell connection? If so, what is the port number used for the reverse shell connection?",
+            "question": "10. From the shell connection initiated by the attacker, can you identify if there are any ports used for the shell connection? If so, what is the port number used for the shell connection?",
             "answer": "4422",
             "adversarial_tactic": "Command and Control (C2): Determining the port used for a reverse shell provides insight into the command and control mechanism, which is crucial for identifying and blocking potential C2 channels."
           }

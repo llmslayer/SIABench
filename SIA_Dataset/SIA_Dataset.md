@@ -48,10 +48,10 @@ Contains reference information about the scenario source.
 
 | Field           | Type   | Purpose                              | Example                                            |
 | --------------- | ------ | ------------------------------------ | -------------------------------------------------- |
-| `source`        | String | Original challenge URL or reference  | `"https://blueteamlabs.online/home/challenge/..."` |
-| `scenario_name` | String | Unique identifier for the scenario   | `"BTLO_Ransomware_Script"`                         |
+| `source`        | String | Original challenge URL or reference  | `"https://cyberdefenders.org/blueteam-ctf-challenges/bluesky-ransomware/"` |
+| `scenario_name` | String | Unique identifier for the scenario   | `"BlueSky"`                         |
 | `last_accessed` | String | Date when scenario was last accessed | `"June 04, 2025"`                                  |
-| `writeup`       | String | Link to solution documentation       | `"https://medium.com/@author/solution"`            |
+| `writeup`       | String | Link to solution documentation       | `"https://h05am10.gitbook.io/h05am10/write-ups/cyberdefenders/network-forensics/bluesky-ransomware"`            |
 
 ### 🧪 SIA Components Section
 
@@ -65,15 +65,20 @@ Contains the core scenario data, questions, and evaluation fields.
   "instructions": "...",
   "directory": "...",
   "questions": ["..."],
-  "answer": "...",
   "task_category": "...",
   "complexity": "...",
-  "adversarial_tactic": "..."
 }
 ```
 
----
+The `questions` array contains three components:
 
+```json
+{
+ "question": "",
+ "answer": "",
+ "adversarial_tactic": ""
+}
+```
 ## 📊 Component Categories
 
 The SIA components are strategically divided into two categories to maintain evaluation integrity:
@@ -91,18 +96,18 @@ The SIA components are strategically divided into two categories to maintain eva
 | `files_available` | Array  | Files provided for analysis            |
 | `instructions`    | String | Environment setup and usage guidelines |
 | `directory`       | String | Working directory path                 |
-| `questions`       | Array  | Questions to be answered by the LLM    |
+| `question`       | String  | List of questions to be answered by the LLM    |
 
 #### Example:
 
 ```json
 {
-  "scenario": "A recent ransomware attack compromised one of our web servers...",
+  "scenario": "A major corporation responsible for vital data...",
   "tools_available": ["tshark", "python", "grep", "strings", "..."],
-  "files_available": ["network.pcap"],
+  "files_available": ["capture.pcap"],
   "instructions": "You are working in a Kali Linux environment. Use the provided tools to analyze the files.",
   "directory": "/home/analyst/investigation",
-  "questions": ["..."]
+  "question": ["Is there any evidence of port scanning in the network traffic? If so, what is the IP address responsible for the scanning activity?, ..."]
 }
 ```
 

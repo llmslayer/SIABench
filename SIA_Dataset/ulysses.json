@@ -57,12 +57,12 @@
             "adversarial_tactic": ""
           },
           {
-            "question": "3. Can you verify if there any suspicious authentication attempts? If so, what user account shows signs of suspicious activity?",
+            "question": "3. Can you verify if there are any suspicious authentication attempts? If so, what user account shows signs of suspicious activity?",
             "answer": "ulysses",
             "adversarial_tactic": "Credential Access: Monitoring failed login attempts may indicate password guessing or brute-forcing attacks targeting specific accounts."
           },
           {
-            "question": "4. If there was suspicious authentication attempts, how many failed login attempts were recorded for the suspicious activity? ",
+            "question": "4. If there are suspicious authentication attempts, how many failed login attempts are recorded for the suspicious activity? ",
             "answer": "32",
             "adversarial_tactic": "Credential Access: Monitoring failed login attempts may indicate password guessing or brute-forcing attacks targeting specific accounts."
           },

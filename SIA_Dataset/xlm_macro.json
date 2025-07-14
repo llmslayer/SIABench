@@ -49,7 +49,7 @@
             "adversarial_tactic": "Defense Evasion: Attackers often use password protection to evade detection and complicate analysis by restricting access to document contents."
           },
           {
-            "question": "2. From sample1.bin, can you identify any hidden sheets  in sample1.bin? If so, what is the name of the sheet that starts with the letter 'S'?",
+            "question": "2. From sample1.bin, can you identify any hidden sheets in sample1.bin? If so, what is the name of the sheet that starts with the letter 'S'?",
             "answer": "SOCWNEScLLxkLhtJp",
             "adversarial_tactic": "Defense Evasion: Hidden sheets and workbook elements conceal malicious code or indicators, helping evade security tools and analysts."
           },

@@ -64,12 +64,12 @@
             "adversarial_tactic": "Discovery: Enumeration helps attackers map server structure."
           },
           {
-            "question": "5. Subsequent to directory enumeration, can you identify if the attacker attempt to identify administrative interfaces? If so, which directory was the attacker was able to uncover?",
+            "question": "5. Subsequent to directory enumeration, can you identify if the attacker attempted to identify administrative interfaces? If so, which directory was the attacker was able to uncover?",
             "answer": "/manager",
             "adversarial_tactic": "Discovery: Enumeration helps attackers map server structure."
           },
           {
-            "question": "6. Subsequent to accessing the administrative interface, can you identify if the attacker attempt to authenticate to the web server? If so, what credentials were used?",
+            "question": "6. Subsequent to accessing the administrative interface, can you identify if the attacker attempted to authenticate to the web server? If so, what credentials were used?",
             "answer": "admin:tomcat",
             "adversarial_tactic": "Initial Access: Default or weak credentials can provide initial access to systems."
           },

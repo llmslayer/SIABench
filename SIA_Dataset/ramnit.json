@@ -65,7 +65,7 @@
             "adversarial_tactic": "Command and Control: Geolocating IP addresses helps identify the physical location of potential attackers."
           },
           {
-            "question": "5. Can you find any evidence of suspicious executable in the memory dump? If so, what is the SHA1 hash of the suspiciuos executable? ",
+            "question": "5. Can you find any evidence of suspicious executable in the memory dump? If so, what is the SHA1 hash of the suspicious executable? ",
             "answer": "280c9d36039f9432433893dee6126d72b9112ad2.",
             "adversarial_tactic": "Execution: Identifying suspicious processes aligns with Execution since it reveals processes that may be actively executing malicious actions within the system."
           },

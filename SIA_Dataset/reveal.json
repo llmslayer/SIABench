@@ -44,7 +44,7 @@
         "directory": "(directory_of_the_files)",
         "questions": [
           {
-            "question": "1. Can you if there is any process running on the system that exhibits suspicious behavior. If so, what is the name of the process?",
+            "question": "1. Can you identify if there is any process running on the system that exhibits suspicious behavior. If so, what is the name of the process?",
             "answer": "powershell.exe",
             "adversarial_tactic": "Execution: Malicious processes often execute unauthorized commands or tools."
           },

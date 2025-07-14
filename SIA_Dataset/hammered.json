@@ -73,7 +73,7 @@
             "adversarial_tactic": "Defense Evasion: Adding firewall rules can be a tactic to evade detection by blocking security monitoring tools or preventing alerts from being triggered, allowing attackers to maintain access without raising suspicion."
           },
           {
-            "question": "7. Can you identify if there is a scanning tool downloaded files in the target system? if so, what is the tool?",
+            "question": "7. Can you identify if there is a scanning tool downloaded in the target system? if so, what is the tool?",
             "answer": "nmap",
             "adversarial_tactic": "Discovery: Scanning tools like nmap are often used by attackers to gather information about the target system, including open ports, services running, and potential vulnerabilities that can be exploited for further access or lateral movement."
           },

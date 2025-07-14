@@ -46,7 +46,7 @@
         "directory": "(directory_of_the_files)",
         "questions": [
           {
-            "question": "1. Can you identify any IP address that appears repeatedly and may seem to be suspiciuos? If so, what is the IP address?",
+            "question": "1. Can you identify any IP address that appears repeatedly and may seem to be suspicious? If so, what is the IP address?",
             "answer": "185.141.25.168",
             "adversarial_tactic": "Command and Control (C2): Repeated IP addresses may indicate an external server used for command and control communication."
           },

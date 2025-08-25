@@ -134,3 +134,23 @@ inspecting ransomware scripts.
 to analyze malicious network traffic, such as PCAP files.
 - **Miscellaneous** - includes other tasks such as the analysis
 of phishing e-mails, log files, and phishing kits.
+
+### 🗂️ Artifacts Availability
+
+There are primarily two ways of downloading the files/artifacts:
+
+1. **GitHub Repository**  
+   Some artifacts are available in this repository:  
+   [Cyber-Defenders Repository](https://github.com/Panagiotis-INS/Cyber-Defenders/tree/main)  
+   Licensed under **AGPL-3.0**.
+
+2. **Blue Team Training Platforms**  
+   - [Blue Team Labs Online (BTLO)](https://blueteamlabs.online/)  
+   - [CyberDefenders](https://cyberdefenders.org/)  
+   - [TryHackMe](https://tryhackme.com/)  
+
+   Following their **Terms & Conditions**, we do not host their artifacts.  
+   Instead, we reference the **source challenge links (URLs)** in our JSON files for each scenario.  
+   - Artifacts can be downloaded freely by signing up (no payment or subscription required).  
+   - These are **free, retired challenges**.  
+   - Each free scenario has a **public writeup** available.

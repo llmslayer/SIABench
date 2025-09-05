@@ -2,7 +2,9 @@
   "scenarios": [
     {
       "metadata": {
-        "scenario_name": "s3"
+        "scenario_name": "s3",
+        "alert_type": "True",
+        "alert_name": "true_alert_4"
       }
     },
     {

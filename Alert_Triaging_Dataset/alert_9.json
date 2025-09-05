@@ -2,7 +2,9 @@
   "scenarios": [
     {
       "metadata": {
-        "scenario_name": "monday_pri_2_10"
+        "scenario_name": "monday_pri_2_10",
+        "alert_type": "False",
+        "alert_name": "false_alert_30"
       }
     },
     {

@@ -2,7 +2,9 @@
   "scenarios": [
     {
       "metadata": {
-        "scenario_name": "f1"
+        "scenario_name": "f1",
+        "alert_type": "True",
+        "alert_name": "true_alert_1"
       }
     },
     {

@@ -7,7 +7,7 @@ Welcome to the **SIABench** repository! This benchmark is designed for **Securit
 SIABench consists of two main components:
 
 - **Part I: SIA Tasks** - Simulates the in-depth investigation process of SIA tasks with **25 unique security scenarios** containing **229 investigative questions** in total
-- **Part II: Alert Triage** - Includes true and false positives for evaluating classification tasks with **35 alert scenarios** and **35 questions** in total
+- **Part II: Alert Triage** - Includes true and false positives for evaluating classification tasks with **135 alert scenarios** and **135 questions** in total
 
 We evaluate different LLMs with our dataset using the [🤖 SIABench Agent].
 

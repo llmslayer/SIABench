@@ -136,9 +136,9 @@ All difficulty levels favor DeepSeek-Reasoner:
 
 ## 📊 Performance Evaluation on Alert Triaging Dataset
 
-> **📢 Note:** The TIISRC dataset will be uploaded soon!
+> **📢 Note:** The TII-SRC-23 dataset will be uploaded soon!
 
-### TH-SRC-23 Dataset (50 TP and 50 FP)
+### TII-SRC-23 Dataset (50 TP and 50 FP)
 
 | Model | True Positives (TP) | False Positives (FP) | Accuracy |
 |-------|---------------------|----------------------|----------|
